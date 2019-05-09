@@ -68,9 +68,10 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container{
-	box-sizing: border-box;
+    box-sizing: border-box;
+    /* max-width: 80%; */
 	padding: 0 30px;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 
 .navigation {
@@ -86,6 +87,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navigation a{
+    display: flex;
 	text-decoration: none;
 	color: #989DA5;
 }
@@ -101,14 +103,14 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-/* sticky nav effect......... */
+/* sticky nav effect.........
 .stuck{
 	background: white;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100%;
-}
+} */
 
 
 /* syling header.............. */
@@ -158,6 +160,19 @@ h1, h2, h3, h4, h5 {
 	margin: 50px;	
 }
 
+@media (max-width: 800px){
+
+    .navigation{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    .intro-header img{
+        display: none;
+    }
+}
+
 /* styling main */
 
 main {
@@ -198,7 +213,7 @@ footer{
 }
 
 /* style the service page......... */
-.service-main{
+/* .service-main{
 	font-size: 15px;
 }
 
@@ -233,7 +248,7 @@ footer{
 	border-radius: 5px;
 	/* box-sizing: border-box;
 	overflow: hidden; */
-}
+/* }
 .box-sec p{
 	margin: 5px;
 }
@@ -263,7 +278,7 @@ footer{
 	flex-direction: column;
 	margin: 20px 20px;
 	padding: 2%;
-}
+} */ */
 
 
 
